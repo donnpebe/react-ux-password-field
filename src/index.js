@@ -73,8 +73,8 @@ var InputPassword = React.createClass({
   },
 
   infoStyle: {
-    position: 'absolute',
-    bottom: -10,
+    position: 'relative',
+    top: -10,
     width: '100%',
     overflow: 'hidden',
     height: 24
@@ -254,7 +254,6 @@ var InputPassword = React.createClass({
 
     return (
       <div
-        style={{position: 'relative', display: 'inline-block'}}
         className="passwordField"
         data-valid={this.state.isValid}
         data-score={this.state.score}
